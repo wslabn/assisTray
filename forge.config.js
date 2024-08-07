@@ -5,17 +5,23 @@ module.exports = {
   packagerConfig: {
     asar: true,
   },
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'wslabn',
+          name: 'assisTray'
+        },
+        prerelease: true
+      }
+    }
+  ],
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {
-        name: 'AppliGeeks Assist',
-        setupIcon: 'wrench.ico',
-        setupExe: 'AppliGeeks-Assist.exe'
-        // iconUrl: Path2D.resolve(__dirname, 'wrench.ico')
-        // loadingGif: Path2D.resolve(__dirname, 'loading.gif')
-      },
+      config: {},
     },
     {
       name: '@electron-forge/maker-zip',

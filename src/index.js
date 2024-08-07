@@ -6,11 +6,13 @@ const schedule = require('node-schedule');
 const appFolder = path.dirname(process.execPath)
 const updateExe = path.resolve(appFolder, '..', 'Update.exe')
 const exeName = path.basename(process.execPath)
+const { updateElectronApp } = require('update-electron-app');
+updateElectronApp(); // additional configuration options available
 
 const rule = new schedule.RecurrenceRule();
-rule.dayOfWeek = 0;
-rule.hour = 16;
-rule.minute = 40;
+rule.dayOfWeek = 1;
+rule.hour = 0;
+rule.minute = 0;
 rule.tz = 'America/New_York';
 
 const createWindow = () => {
@@ -39,6 +41,13 @@ app.whenReady().then(() => {
             shell.openExternal('https://pcrt.appligeeks.com/portal')           
         }
     },
+    {
+      label: 'New Item',
+      click: () => {
+          console.log("Support Request");
+          shell.openExternal('https://pcrt.appligeeks.com/portal')           
+      }
+  },
     { type: 'separator' },
     {
         label: 'Settings',

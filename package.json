@@ -1,7 +1,7 @@
 {
   "name": "appligeeks_assist",
-  "productName": "AppliGeeks Assist",
-  "version": "2024.07.311",
+  "productName": "assist",
+  "version": "2024.08.043",
   "description": "AppliGeeks Assist",
   "main": "src/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "build": {
     "appId": "com.appligeeks.assist",
-    "productName": "AppliGeeks Assist"
+    "productName": "appligeeks assist"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.4.0",
@@ -27,12 +27,22 @@
     "electron": "31.3.1"
   },
   "keywords": [],
-  "author": "AppliGeeks <support@appligeeks.com",
+  "author": "AppliGeeks <support@appligeeks.com>",
   "license": "MIT",
   "dependencies": {
+    "@electron-forge/publisher-github": "^7.4.0",
     "bootstrap": "^5.3.3",
     "electron-squirrel-startup": "^1.0.1",
     "jquery": "^3.7.1",
-    "node-schedule": "^2.1.1"
-  }
+    "node-schedule": "^2.1.1",
+    "update-electron-app": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wslabn/assisTray.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wslabn/assisTray/issues"
+  },
+  "homepage": "https://github.com/wslabn/assisTray#readme"
 }

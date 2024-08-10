@@ -1,7 +1,7 @@
 {
   "name": "appligeeks_assist",
   "productName": "assist",
-  "version": "01.08.101",
+  "version": "01.08.102",
   "description": "AppliGeeks Assist",
   "main": "src/index.js",
   "scripts": {

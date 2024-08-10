@@ -11,7 +11,7 @@ updateElectronApp(); // additional configuration options available
 
 const rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = 1;
-rule.hour = 0;
+rule.hour = 1;
 rule.minute = 0;
 rule.tz = 'America/New_York';
 
